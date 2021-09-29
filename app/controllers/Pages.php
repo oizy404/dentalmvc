@@ -18,4 +18,10 @@
             ];
             $this->view('pages/about', $data);
         }
+        public function userhome(){
+            $data = [
+                'title' => 'Fill up Form'
+            ];
+            $this->view('pages/userhome', $data);
+        }
     }

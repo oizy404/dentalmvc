@@ -123,7 +123,9 @@
                 //Make sure errors are empty
                 if(empty($data['email_err']) && empty($data['password_err'])){
                     //Validated
-                    die('SUCCESS');
+                    // die('SUCCESS');
+                    // $this->view('pages/userhome');
+                    return redirect('pages/userhome');
                 }
                 else{
                     //Load view with errors
